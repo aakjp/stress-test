@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "date": "2026-10-22T08:27:45.563Z",
+    "machine": "darwin 25.6.0 (arm64)",
+    "node": "v22.15.1",
+    "rustFetch": "2.1.0",
+    "axios": "1.20.0",
+    "targetRps": 50000,
+    "durationMs": 60000,
+    "tickMs": 10,
+    "sweep": [
+      50,
+      100,
+      200,
+      500
+    ],
+    "serverWorkers": 6
+  },
+  "headroom": {
+    "rps": 40194.6,
+    "p99": 0.16,
+    "concurrency": 1024,
+    "durationMs": 15000,
+    "processes": 4
+  },
+  "clients": {
+    "rust": {
+      "client": "rust",
+      "sustained": {
+        "scheduled": 2900500,
+        "fired": 226018,
+        "completed": 226018,
+        "errors": 172942,
+        "skipped": 2674482,
+        "achievedRps": 3493.1,
+        "p50": 2285.01,
+        "p95": 5549.27,
+        "p99": 10706.41,
+        "max": 30132.38,
+        "mean": 2611.83,
+        "schedulerDriftP95Ms": 2258.13,
+        "drainMs": 4410.3,
+        "errorTypes": {
+          "Network error: connect EADDRNOTAVAIL 127.0.0.1:65327 - Local": 166499,
+          "Network error: connect ETIMEDOUT 127.0.0.1:65327": 5565,
+          "Request timeout after 30000ms": 878
+        },
+        "rssStartMB": 91.4,
+        "rssPeakMB": 667.8,
+        "rssEndMB": 664.8,
+        "heapUsedEndMB": 112.6
+      },
+      "sweep": [
+        {
+          "concurrency": 50,
+          "rps": 22736.5,
+          "p50": 2.01,
+          "p95": 3.08,
+          "p99": 4.31,
+          "errors": 0
+        },
+        {
+          "concurrency": 100,
+          "rps": 22302,
+          "p50": 4.16,
+          "p95": 5.76,
+          "p99": 8.98,
+          "errors": 0
+        },
+        {
+          "concurrency": 200,
+          "rps": 22855.5,
+          "p50": 8.41,
+          "p95": 9.93,
+          "p99": 16.19,
+          "errors": 0
+        },
+        {
+          "concurrency": 500,
+          "rps": 20418.6,
+          "p50": 23.85,
+          "p95": 28.43,
+          "p99": 36.48,
+          "errors": 0
+        }
+      ],
+      "failed": false
+    }
+  }
+}

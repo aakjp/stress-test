@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "date": "2026-10-22T06:23:59.813Z",
+    "machine": "darwin 25.6.0 (arm64)",
+    "node": "v22.15.1",
+    "rustFetch": "2.1.0",
+    "axios": "1.20.0",
+    "targetRps": 15000,
+    "durationMs": 60000,
+    "tickMs": 10,
+    "sweep": [
+      50,
+      100,
+      200,
+      500
+    ]
+  },
+  "headroom": {
+    "rps": 16828.5,
+    "p99": 16.61,
+    "concurrency": 256,
+    "durationMs": 15000
+  },
+  "clients": {
+    "native": {
+      "client": "native",
+      "sustained": {
+        "scheduled": 900000,
+        "fired": 896577,
+        "completed": 896577,
+        "errors": 0,
+        "skipped": 3423,
+        "achievedRps": 14944.1,
+        "p50": 3.06,
+        "p95": 41.34,
+        "p99": 450.25,
+        "max": 1544.62,
+        "mean": 17.41,
+        "schedulerDriftP95Ms": 11.35,
+        "drainMs": 11.7,
+        "errorTypes": {},
+        "rssStartMB": 101.6,
+        "rssPeakMB": 634.7,
+        "rssEndMB": 633.5,
+        "heapUsedEndMB": 65.9
+      },
+      "sweep": [
+        {
+          "concurrency": 50,
+          "rps": 22800.4,
+          "p50": 1.98,
+          "p95": 3.19,
+          "p99": 3.65,
+          "errors": 0
+        },
+        {
+          "concurrency": 100,
+          "rps": 22389.6,
+          "p50": 4.1,
+          "p95": 5.62,
+          "p99": 7.03,
+          "errors": 0
+        },
+        {
+          "concurrency": 200,
+          "rps": 21181.1,
+          "p50": 9.49,
+          "p95": 10.55,
+          "p99": 13.88,
+          "errors": 0
+        },
+        {
+          "concurrency": 500,
+          "rps": 19018.8,
+          "p50": 25.8,
+          "p95": 33.2,
+          "p99": 37.21,
+          "errors": 0
+        }
+      ],
+      "failed": false
+    },
+    "rust": {
+      "client": "rust",
+      "sustained": {
+        "scheduled": 900000,
+        "fired": 900000,
+        "completed": 900000,
+        "errors": 0,
+        "skipped": 0,
+        "achievedRps": 15000.9,
+        "p50": 4.72,
+        "p95": 7.86,
+        "p99": 11.18,
+        "max": 63.95,
+        "mean": 5.09,
+        "schedulerDriftP95Ms": 1.6,
+        "drainMs": 10,
+        "errorTypes": {},
+        "rssStartMB": 93.9,
+        "rssPeakMB": 202,
+        "rssEndMB": 202,
+        "heapUsedEndMB": 27.1
+      },
+      "sweep": [
+        {
+          "concurrency": 50,
+          "rps": 23977.1,
+          "p50": 1.96,
+          "p95": 2.76,
+          "p99": 3.9,
+          "errors": 0
+        },
+        {
+          "concurrency": 100,
+          "rps": 23882.2,
+          "p50": 3.97,
+          "p95": 5.02,
+          "p99": 7.51,
+          "errors": 0
+        },
+        {
+          "concurrency": 200,
+          "rps": 23454.2,
+          "p50": 8.26,
+          "p95": 9.67,
+          "p99": 11.53,
+          "errors": 0
+        },
+        {
+          "concurrency": 500,
+          "rps": 22063.7,
+          "p50": 22.28,
+          "p95": 25.64,
+          "p99": 28.51,
+          "errors": 0
+        }
+      ],
+      "failed": false
+    },
+    "axios-default": {
+      "client": "axios-default",
+      "sustained": {
+        "scheduled": 897150,
+        "fired": 205351,
+        "completed": 205351,
+        "errors": 165440,
+        "skipped": 691799,
+        "achievedRps": 3291.8,
+        "p50": 2416.15,
+        "p95": 8254.08,
+        "p99": 13032.11,
+        "max": 14065.84,
+        "mean": 2796.12,
+        "schedulerDriftP95Ms": 2314.93,
+        "drainMs": 22.6,
+        "errorTypes": {
+          "EADDRNOTAVAIL": 157938,
+          "ETIMEDOUT": 7502
+        },
+        "rssStartMB": 109.6,
+        "rssPeakMB": 843.4,
+        "rssEndMB": 840.1,
+        "heapUsedEndMB": 165.9
+      },
+      "sweep": [
+        {
+          "concurrency": 50,
+          "rps": 14736.8,
+          "p50": 3.28,
+          "p95": 3.75,
+          "p99": 6.65,
+          "errors": 0
+        },
+        {
+          "concurrency": 100,
+          "rps": 14519.4,
+          "p50": 6.8,
+          "p95": 7.23,
+          "p99": 13.16,
+          "errors": 0
+        },
+        {
+          "concurrency": 200,
+          "rps": 13449.1,
+          "p50": 14.58,
+          "p95": 15.73,
+          "p99": 21.21,
+          "errors": 0
+        },
+        {
+          "concurrency": 500,
+          "rps": 12460.6,
+          "p50": 38.78,
+          "p95": 49.71,
+          "p99": 55.1,
+          "errors": 0
+        }
+      ],
+      "failed": false
+    },
+    "axios-keepalive": {
+      "client": "axios-keepalive",
+      "sustained": {
+        "scheduled": 900000,
+        "fired": 879551,
+        "completed": 879551,
+        "errors": 0,
+        "skipped": 20449,
+        "achievedRps": 14577.7,
+        "p50": 668.99,
+        "p95": 704.83,
+        "p99": 717.87,
+        "max": 730.51,
+        "mean": 650.81,
+        "schedulerDriftP95Ms": 3.13,
+        "drainMs": 346.9,
+        "errorTypes": {},
+        "rssStartMB": 113.2,
+        "rssPeakMB": 761.3,
+        "rssEndMB": 762.8,
+        "heapUsedEndMB": 192.2
+      },
+      "sweep": [
+        {
+          "concurrency": 50,
+          "rps": 14236.4,
+          "p50": 3.27,
+          "p95": 4.22,
+          "p99": 6.92,
+          "errors": 0
+        },
+        {
+          "concurrency": 100,
+          "rps": 14045.6,
+          "p50": 7.06,
+          "p95": 7.96,
+          "p99": 11.69,
+          "errors": 0
+        },
+        {
+          "concurrency": 200,
+          "rps": 13995,
+          "p50": 14.03,
+          "p95": 15.86,
+          "p99": 19.38,
+          "errors": 0
+        },
+        {
+          "concurrency": 500,
+          "rps": 13678,
+          "p50": 36.06,
+          "p95": 40.04,
+          "p99": 41.98,
+          "errors": 0
+        }
+      ],
+      "failed": false
+    }
+  }
+}
