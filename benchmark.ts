@@ -18,7 +18,7 @@ import axios from "axios";
 
 const RUNS = Number(process.argv[2] ?? 10);
 const ROUNDS = 5;
-const RESULTS_FILE = "benchmark-results.json";
+const RESULTS_FILE = process.argv[3] ?? "benchmark-results.json";
 
 // ---------------------------------------------------------------------------
 // Payloads
