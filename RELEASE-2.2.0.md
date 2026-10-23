@@ -1,6 +1,6 @@
 # rust-fetch 2.2.0 — What's New
 
-**Released:** 2026-10-22 · **Tag:** [`v2.2.0`](https://github.com/asemqaffaf/rust-fetch/releases/tag/v2.2.0) · **Upgrade:** `npm install rust-fetch@^2.2.0`
+**Released:** 2026-10-22 · **Tag:** [`v2.2.0`](https://github.com/anonymous/rust-fetch/releases/tag/v2.2.0) · **Upgrade:** `npm install rust-fetch@^2.2.0`
 
 2.2.0 is the largest feature release since 2.0, adding WebSockets, upload progress and
 typed request methods on top of a reworked request pipeline. **No breaking changes** —
@@ -114,4 +114,4 @@ passes 19/19. Details and reproduction steps: [`TEST-2.2.0.md`](./TEST-2.2.0.md)
 **2.3.0 — the native transport on npm:** prebuilt per-platform binaries so
 `npm install rust-fetch` gets the native transport with no build step, plus Windows
 support and a Windows CI job. See the
-[roadmap](https://github.com/asemqaffaf/rust-fetch/blob/main/ROADMAP.md).
+[roadmap](https://github.com/anonymous/rust-fetch/blob/main/ROADMAP.md).
